@@ -3,11 +3,16 @@ import axios from 'axios';
 import './App.css';
 
 
-https://api.coingecko.com/api/v3/coins/markets?vs_currency=kshs&order=market_cap_desc&per_page=100&page=1&sparkline=false&locale=en
 
 function App() {
+  const []
 
-
+  useEffect(() => {
+    axios.get('https://api.coingecko.com/api/v3/coins/markets?vs_currency=kshs&order=market_cap_desc&per_page=100&page=1&sparkline=false&locale=en')
+    .then(res => {
+      setCoins
+    })
+  })
 
 
   return (
