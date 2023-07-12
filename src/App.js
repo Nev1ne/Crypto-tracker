@@ -38,8 +38,15 @@ const filteredCoins = coins.filter(coin =>
 
      {filteredCoins.map(coin => {
       return (
-        <Coin key={coin.id}
-      )
+        <Coin 
+        key={coin.id}
+        name={coin.name}
+        image={coin.image}
+        symbol={coin.symbol}
+        volume={coin.market_cap}
+        price={coin.current_price}
+        />
+      );
      })} 
 
     </div>
